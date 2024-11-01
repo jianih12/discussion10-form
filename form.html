@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+<form action="https://formspree.io/f/movqedry" method="post">
+        <fieldset>
+            <legend>Form</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" placeholder="Eg: John" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" placeholder="Eg: Smith" name="last-name" required>
+
+            <label for="UM_email">UM Email:</label>
+            <input type="email" id="UM_email" placeholder="JohnS@umich.edu" name="email" required>
+
+            <label for="date">Select a Date</label>
+            <input type="date" id="date" name="available-date" required>
+
+            <div class="radio-group">
+                <p>Select a Time</p>
+                <input type="radio" id="morning" name="available-time" value="morning">
+                <label for="morning">Morning</label>
+
+                <input type="radio" id="afternoon" name="available-time" value="afternoon">
+                <label for="afternoon">Afternoon</label>
+
+                <input type="radio" id="evening" name="available-time" value="evening">
+                <label for="evening">Evening</label>
+            </div>
+
+            <label for="message">Leave A Message</label>
+            <textarea name="message" id="message"></textarea>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
